@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.tbosch.spring.batch.config;
+package de.codecentric.batch.config;
 
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Import;
+import org.springframework.context.annotation.ImportResource;
 
 @Configuration
-@Import({ ServletConfiguration.class, WebappConfiguration.class })
-public class MainConfiguration {
+@ImportResource("classpath:/org/springframework/batch/admin/web/resources/servlet-config.xml")
+public class ServletConfiguration {
 
 }

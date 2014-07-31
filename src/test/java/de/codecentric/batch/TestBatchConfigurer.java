@@ -13,13 +13,32 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.tbosch.spring.batch.config;
+package de.codecentric.batch;
 
+import org.springframework.batch.core.configuration.annotation.DefaultBatchConfigurer;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.ImportResource;
 
 @Configuration
-@ImportResource("classpath:/org/springframework/batch/admin/web/resources/servlet-config.xml")
-public class ServletConfiguration {
+public class TestBatchConfigurer extends DefaultBatchConfigurer {
+
+	// @Override
+	// public JobRepository getJobRepository() throws Exception {
+	// return null;
+	// }
+	//
+	// @Override
+	// public PlatformTransactionManager getTransactionManager() throws Exception {
+	// return null;
+	// }
+	//
+	// @Override
+	// public JobLauncher getJobLauncher() throws Exception {
+	// return null;
+	// }
+	//
+	// @Override
+	// public JobExplorer getJobExplorer() throws Exception {
+	// return null;
+	// }
 
 }
