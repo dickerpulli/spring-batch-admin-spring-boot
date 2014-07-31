@@ -33,11 +33,9 @@ import org.springframework.batch.item.support.ListItemReader;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Import;
 
 @Configuration
 @EnableBatchProcessing(modular = true)
-@Import(TestBatchConfigurer.class)
 public class TestBatchConfiguration {
 
 	@Autowired

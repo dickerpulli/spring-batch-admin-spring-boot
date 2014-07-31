@@ -24,6 +24,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+/**
+ * This is a test class to run a batch. It is needed to have a running HSQLDB server to store the metadata. Details of
+ * the run can be viewed in the spring-batch-admin view, i.e. at http://localhost:8080
+ *
+ * @author Thomas Bosch
+ */
 @ContextConfiguration(classes = { TestBatchConfiguration.class })
 @RunWith(SpringJUnit4ClassRunner.class)
 public class BatchTest {
