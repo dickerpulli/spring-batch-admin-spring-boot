@@ -1,4 +1,4 @@
-spring-boot-admin-spring-boot
+spring-batch-admin-spring-boot
 ================================
 
 This is a a Spring Boot capsule of the standard [Spring Batch Admin](https://github.com/spring-projects/spring-batch-admin "Github") application of the [Spring Batch](http://projects.spring.io/spring-batch/ "SpringIO Page") team. 
