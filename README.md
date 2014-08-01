@@ -15,5 +15,7 @@ This can be changed:
  	* Delete the file batch-hsql.properties
  	* Add a new file batch-[*your-db*].properties (a template can be found in the root of spring-batch-core.jar)
  	* Set the property *ENVIRONMENT* in application.properties to *your-db* (means i.e. batch-oracle.properties with ENVIRONMENT=oracle)
+ 	
+You can test the running application by starting the JUnit test class *BatchTest* that can be found in the test sources folder.
 
 Feel free to use it. The current version of **Spring Batch Admin** can be modified in the pom.xml.
