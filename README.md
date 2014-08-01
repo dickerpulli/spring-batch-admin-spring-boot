@@ -9,10 +9,11 @@ As default configuration a local HSQLDB database is used for the batch metadata.
 
 This can be changed:
 
-*	Modify or delete the file batch-hsql.properties if you have another database type
-
-* 	Add a new file batch-[*your-db*].properties (a template can be found in the root of spring-batch-core.jar)
-
-* 	Set the property *ENVIRONMENT* in application.properties to *your-db* (means i.e. batch-oracle.properties with ENVIRONMENT=oracle)
+1. You have other HSQLDB properties?	
+	* Just change the entries inside batch-hsql.properties
+2. You prefer to use another database system?
+ 	* Delete the file batch-hsql.properties
+ 	* Add a new file batch-[*your-db*].properties (a template can be found in the root of spring-batch-core.jar)
+ 	* Set the property *ENVIRONMENT* in application.properties to *your-db* (means i.e. batch-oracle.properties with ENVIRONMENT=oracle)
 
 Feel free to use it. The current version of **Spring Batch Admin** can be modified in the pom.xml.
