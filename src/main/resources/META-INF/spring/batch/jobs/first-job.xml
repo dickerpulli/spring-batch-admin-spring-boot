@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:batch="http://www.springframework.org/schema/batch"
+    xsi:schemaLocation="http://www.springframework.org/schema/batch http://www.springframework.org/schema/batch/spring-batch.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.1.xsd">
+
+    <!-- This is the XML way to define jobs but it will be very handy if you already have jobs like this -->
+    
+    <batch:job id="FirstJob" restartable="true">
+                
+        <batch:step id="firstStep">
+            <batch:tasklet ref="firstTasklet" start-limit="1" />
+        </batch:step>
+           
+    </batch:job>
+
+    <bean id="firstTasklet" class="de.codecentric.batch.tasklet.FirstTasklet">
+        <property name="property" value="${custom-property}" />
+    </bean>
+
+</beans>
