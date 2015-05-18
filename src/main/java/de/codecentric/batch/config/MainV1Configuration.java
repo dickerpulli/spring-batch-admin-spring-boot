@@ -25,6 +25,6 @@ import org.springframework.context.annotation.Import;
  */
 @Configuration
 @Import({ ServletConfiguration.class, WebappConfiguration.class })
-public class MainConfiguration {
+public class MainV1Configuration {
 
 }
